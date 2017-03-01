@@ -7,6 +7,7 @@ requirejs.config({
 		bootstrap: 'lib/bootstrap/js/bootstrap.min',
 		jqueryCookie: 'lib/jquery-cookie/jquery.cookie',
 		nprogress: 'lib/nprogress/nprogress',
+		template: 'lib/artTemplate-3.0.1/template',
 		
 		// 自己写的路径配置
 		courseAddStep1: 'js/course/add_step1',
@@ -114,13 +115,13 @@ require(['jquery', 'bootstrap', 'common']);
 		        break;
 		    /*home*/
 		    case '/html/home/login.html':
-		        require(['homeLogin']);
+		        require(['login']);
 		        break;
 		    case '/html/home/repass.html':
-		        require(['homeRepass']);
+		        require(['repass']);
 		        break;
 		    case '/html/home/settings.html':
-		        require(['homeSettings']);
+		        require(['settings']);
 		        break;
 	        case '/':
 		        require(['index']);
